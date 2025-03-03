@@ -73,6 +73,15 @@ table th {
   border-bottom-color: var(--dark-secondary-color);
 }
 
+/* Added for card table */
+table.cardtable td {
+  border-bottom: None;
+}
+
+table.cardtable tr {
+  border-bottom: 1px solid var(--dark-secondary-color);
+}
+
 code,
 pre {
   background-color: var(--dark-secondary-color) !important;

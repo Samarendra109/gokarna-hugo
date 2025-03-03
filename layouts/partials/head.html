@@ -44,6 +44,9 @@
     {{ $cssMain := resources.Get "css/main.css" | minify }}
     <link rel="stylesheet" type="text/css" href="{{ $cssMain.RelPermalink }}">
 
+    {{ $cssCards := resources.Get "css/cards.css" | minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $cssCards.RelPermalink }}">
+
     {{ $cssDark := resources.Get "css/dark.css" | minify }}
     <link id="dark-theme" rel="stylesheet" href="{{ $cssDark.RelPermalink }}">
 

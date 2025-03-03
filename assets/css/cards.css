@@ -2,6 +2,13 @@
   width: 160px;
   height: 160px;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.one img {
+  /* vertical-align: middle; */
+  box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%);
 }
 
 .cardtable {
@@ -22,20 +29,19 @@
 .cardimage {
   grid-area: cimage;
   padding: 16px;
-  width: 20%;
-  vertical-align: middle;
 }
 
 .cardcontent {
   grid-area: ccontent;
   padding: 8px;
-  width: 80%;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
-  .cardtable {
-    /*background-color: lightblue;*/
-    display: none;
+  .cardentry {
+    grid-template-areas: 
+    'cimage cimage cimage cimage'
+    'ccontent ccontent ccontent ccontent';
   }
 }

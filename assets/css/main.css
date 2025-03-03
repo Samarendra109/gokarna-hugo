@@ -1,6 +1,7 @@
 :root {
   --content-width: 1120px;
   --container-width: 810px;
+  --header-width: 1008px; /*90% of content-width*/
 
   --light-primary-color: 255, 255, 255;
   --light-secondary-color: #dddddd;
@@ -141,7 +142,7 @@ img {
 .header .header-nav {
   height: 50px;
   margin: auto;
-  width: calc(0.90 * var(--content-width));
+  width: var(--header-width);
   margin-top: 0;
 }
 
@@ -374,6 +375,15 @@ table th {
 }
 
 table td {
+  border-bottom: 1px solid var(--light-secondary-color);
+}
+
+/* Added for card table */
+table.cardtable td {
+  border-bottom: None;
+}
+
+table.cardtable tr {
   border-bottom: 1px solid var(--light-secondary-color);
 }
 
