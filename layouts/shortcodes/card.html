@@ -1,0 +1,14 @@
+
+{{ $image :=  .Get "image" | default "page_logo.jpg" }}
+    <tr class="cardentry">
+      <td class="cardimage">
+        <div class="one">
+          <img src='/images/{{ $image }}' width="200" style="box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%);">
+        </div>
+      </td>
+      <td class="cardcontent">
+        <!-- {{ .Inner }} -->
+        {{ .Inner | .Page.RenderString (dict "display" "block") -}}
+      </td>
+    </tr>
+  
