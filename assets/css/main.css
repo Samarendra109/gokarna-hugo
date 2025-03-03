@@ -140,6 +140,8 @@ img {
 }
 .header .header-nav {
   height: 50px;
+  margin: auto;
+  width: calc(0.90 * var(--content-width));
   margin-top: 0;
 }
 
@@ -561,6 +563,11 @@ table td {
   main#content {
     width: auto;
   }
+
+  .header .header-nav {
+    width: auto;
+  }
+
 }
 
 @media only screen and (max-width: 820px) {
