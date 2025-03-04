@@ -1,7 +1,7 @@
 :root {
-  --content-width: 1008px;
+  --content-width: 1008px; /*90% of header-width*/
   --container-width: 810px;
-  --header-width: 1120px; /*90% of content-width*/
+  --header-width: 1120px; 
 
   --light-primary-color: 255, 255, 255;
   --light-secondary-color: #dddddd;
